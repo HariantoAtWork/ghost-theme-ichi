@@ -1,0 +1,32 @@
+{
+  "name": "ghost-theme-ichi",
+  "version": "0.0.0",
+  "description": "Ghost Theme: Ichi",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HariantoAtWork/ghost-theme-ichi.git"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ichi",
+    "mdstn.com"
+  ],
+  "author": "Harianto van Insulinde",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/HariantoAtWork/ghost-theme-ichi/issues"
+  },
+  "homepage": "https://github.com/HariantoAtWork/ghost-theme-ichi",
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.9.0"
+  }
+}

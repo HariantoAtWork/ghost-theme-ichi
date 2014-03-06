@@ -1,0 +1,165 @@
+// ------------------------------
+// PANEL
+// ------------------------------
+
+.panel {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+  .panel__vertical {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.panel-title {
+  margin: 0 0 5px 0;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  color: #FFF;
+}
+
+.panel-subtitle {
+  font-family: @serif-font;
+  font-size: 1.2em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  color: @gray;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ------------------------------
+// COVER PANEL
+// ------------------------------
+
+.panel-cover {
+  display: block;
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  background: url(../images/background-cover.jpg) top left no-repeat @gray-darker;
+  background-size: cover;
+}
+
+  .panel-cover--collapsed {
+    width: 40%;
+    max-width: 530px;
+  }
+
+  .panel-cover--overlay {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .linear-gradient(140deg, rgba( red(#444444), blue(#444444), green(#444444),.6) 20%, rgba(red(#000000),blue(#000000),green(#000000),.9));
+  }
+
+  .panel-cover__logo {
+    margin-bottom: .2em;
+  }
+
+  .panel-cover__description {
+    margin: 0 30px;
+  }
+
+  .panel-cover__divider {
+    width: 50%;
+    margin: 20px auto;
+    border-top: 1px solid rgba(255,255,255,.14);
+  }
+
+  .panel-cover__divider--secondary {
+    width: 15%;
+  }
+
+  // ------------------------------
+  // MAIN PANEL
+  // ------------------------------
+
+  .panel-main {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+    .no-js {
+
+      .panel-main {
+        width: 40%;
+        max-width: 530px;
+      }
+
+    }
+
+    .panel-main__inner {
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      z-index: 800;
+      padding: 0 60px;
+    }
+
+    .panel-main__content {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .panel-main__content--fixed {
+      width: 480px;
+      transition: width 1s;
+      -webkit-transition: width 1s; /* Safari */
+    }
+
+  .panel-inverted {
+    font-weight: 100;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 1px 1px rgba(000,000,000,.4);
+
+    a {
+      color: #FFF;
+    }
+
+  }
+
+// ------------------------------
+// COVER NAVIGATION
+// ------------------------------
+
+.cover-navigation {
+  margin-top: 10px;
+}
+
+  .cover-navigation--social {
+    margin-left: 30px;
+  }
+
+// ------------------------------
+// ADDITIONAL COVER COLOURS
+// ------------------------------
+
+.cover-green {
+  .linear-gradient(140deg, rgba(red(@green),green(@green), blue(@green),.6) 20%, rgba(red(darken(@green, 20%)),green(darken(@green, 20%)), blue(darken(@green, 20%)),.8));
+}
+
+.cover-purple {
+  .linear-gradient(140deg, rgba(red(@purple),green(@purple), blue(@purple),.6) 20%, rgba(red(darken(@purple, 20%)),green(darken(@purple, 20%)), blue(darken(@purple, 20%)),.8));
+}
+
+.cover-red {
+  .linear-gradient(140deg, rgba(red(darken(@red, 30%)),green(darken(@red, 30%)), blue(darken(@red, 30%)),.6) 20%, rgba(red(darken(@red, 50%)),green(darken(@red, 50%)), blue(darken(@red, 50%)),.8));
+}
+
+.cover-slate {
+  .linear-gradient(140deg, rgba(red(@slate),green(@slate), blue(@slate),.6) 20%, rgba(red(darken(@slate, 20%)),green(darken(@slate, 20%)), blue(darken(@slate, 20%)),.8));
+}
+
+.cover-disabled {
+  background: none;
+}
