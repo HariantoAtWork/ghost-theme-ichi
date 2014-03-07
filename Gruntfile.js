@@ -24,16 +24,23 @@ grunt.initConfig({
     less: {
         development: {
             options: {
-              compress: false,  //minifying the result
-              strictImports: true, //Force evaluation of imports.
-              cleancss: true,
-              force: true,
+              compress: false,  //not minifying the result
             },
             files: {
               //compiling ichi.less into screen.css
-              "<%= paths.css %>screen.test.css":"<%= paths.assets.css %>ichi.less"
+              "<%= paths.css %>screen.css":"<%= paths.assets.css %>ichi.less"
+            }
+        },
+        production: {
+            options: {
+              compress: true,  //minifying the result
+            },
+            files: {
+              //compiling ichi.less into screen.css
+              "<%= paths.css %>screen.min.css":"<%= paths.assets.css %>ichi.less"
             }
         }
+
     },
     uglify: {
       //...

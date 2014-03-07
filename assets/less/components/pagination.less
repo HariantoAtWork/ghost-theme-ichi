@@ -5,18 +5,27 @@
 .pagination {
   display: block;
   margin: 0 0 4em 0;
+  text-align: center;
+  position: relative;
 }
 
   .pagination__page-number {
     margin: 0;
     font-size: .8em;
     color: @gray-dark;
+    left:0;
   }
 
   .pagination__newer {
     margin-right: 1em;
+    position: absolute;
+    left:0;
+    top: -5px;
   }
 
   .pagination__older {
     margin-left: 1em;
+    position: absolute;
+    right:0;
+    top: -5px;
   }
